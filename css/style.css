@@ -4,8 +4,8 @@
 
 :root {
     --main-color: #fff;
+    --body-color: #F2F2F2;
     --gray-color: #E5E5E5;
-    --gray-dark: #0000004D;
     --font-500: 500;
     --font-400: 400;
     --font-700: 700;
@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--gray-color);
+    background-color:var(--body-color);;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
@@ -76,11 +76,19 @@ html {
 /* Margin and Padding */
 
 .pad {
-    padding: 10rem;
+    padding: 12rem 8rem;
 }
 
 .pad_mix {
-    padding: 10rem 0 10rem 0;
+    padding: 8rem 0 8rem 0;
+}
+
+.pad_mix2 {
+    padding: 7.1rem 6.4rem 6.4rem 6.4rem;
+}
+
+.pad_mix3 {
+    padding: 12rem 0 12rem 8rem;
 }
 
 .pad_5 {
@@ -88,11 +96,11 @@ html {
 }
 
 .pad_7 {
-    padding: 7rem;
+    padding: 8.4rem;
 }
 
 .padr_7 {
-    padding-right: 7rem;
+    padding-right: 14.8rem;
 }
 
 .padb_10 {
@@ -113,6 +121,10 @@ html {
 
 .mt_5 {
     margin-top: 5rem;
+}
+
+.mt_6 {
+    margin-top: 6rem;
 }
 
 .mt_8 {
@@ -155,6 +167,10 @@ html {
     margin-bottom: 2rem;
 }
 
+.mb_31 {
+    margin-bottom: 3.1rem;
+}
+
 .mb_5 {
     margin-bottom: 5rem;
 }
@@ -175,7 +191,7 @@ html {
 .card {
     max-width: 69.6rem;
     min-height: 15rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .card--button {
@@ -186,7 +202,7 @@ html {
     font-weight: var(--font-700);
     font-size: 2.4rem;
     line-height: 3.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.4rem;
 }
 
 .card_describe {
@@ -200,7 +216,7 @@ button {
     height: 4rem;
     font-weight: var(--font-500);
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
     border-radius: 0.6rem;
     border: 1px solid var(--btn-color);
     background-color: transparent;
@@ -249,21 +265,21 @@ button:hover {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
     display: block;
 }
 
 .rectangle {
     width: 75rem;
     height: 44rem;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
     display: block;
 }
 
 .square {
     width: 83rem;
     height: 74rem;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
     display: block;
 }
 
@@ -271,20 +287,22 @@ button:hover {
     width: 4.4rem;
     height: 4.4rem;
     border-radius: 50%;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
 }
 
 .mid_circle {
     width: 10.8rem;
     height: 10.8rem;
     border-radius: 50%;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
 }
 
 .card_link {
     font-weight: var(--font-700);
     font-size: 1.8rem;
     line-height: 3rem;
+    margin-top: 2.4rem;
+    display: block;
 }
 
 .section_d-card--wrapper {
@@ -307,18 +325,30 @@ button:hover {
     line-height: 5rem;
     color: #000000CC;
     max-width: 139.2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .small_rectangle {
     width: 42.9rem;
     height: 27.5rem;
-    background-color: var(--gray-dark);
+    background-color: var(--gray-color);
 }
 
 .card--small {
     max-width: 42.9rem;
     height: 27.5rem;
+}
+
+#section_d .card,#section_i .card{
+    margin-top: 4rem;
+}
+
+hr {
+    margin: 3.2rem 0 3.2rem 0;
+}
+
+#section_j .card {
+    max-width: 62.2rem;
 }
 
 /* Media queries */
@@ -351,6 +381,14 @@ button:hover {
 
     #section_e .card,#section_f .card,#section_g .card,#section_h .card{
         padding: 2rem;
+    }
+
+    .card_describe {
+        font-size: 1.5rem;
+    }
+
+    .pad_mix3 {
+        padding: 12rem 0 12rem 2rem;
     }
 }
 
